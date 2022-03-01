@@ -1,0 +1,30 @@
+
+<div>
+<section>
+    <mat-grid-list cols="3">
+      <mat-grid-tile colspan="3">
+        <mat-card style="border-radius: 2px;">
+          <mat-card-header color="primary">
+            <mat-card-title style="align-items: center;">DÈCHEBOARD</mat-card-title>
+          </mat-card-header>
+          <form [formGroup]="loginForm" (submit)="loginUser()">
+            <mat-form-field style="width:400px !important">
+              <mat-label>Email</mat-label>
+              <input formControlName="email" matInput>
+            </mat-form-field>
+            <br>
+            <mat-form-field style="width:400px !important">
+              <mat-label>Password</mat-label>
+              <input type="password" formControlName="password" matInput>
+            </mat-form-field>
+            <br>
+            <button type="submit" mat-raised-button color="primary">LOGIN</button>
+            <button mat-raised-button color="primary" (click)="NavigateToRegister()" style="left: 195px; background-color: deeppink;">REGISTER HERE</button>
+          </form>
+        <button type="submit" mat-raised-button color="primary" (click)="goToLink('http://localhost:8080/data/auth/google')" style="background-color: green;">LOGIN WITH GOOGLE</button>
+        </mat-card>
+
+      </mat-grid-tile>
+    </mat-grid-list>
+  </section>
+</div>

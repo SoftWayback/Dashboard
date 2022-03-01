@@ -1,0 +1,26 @@
+<div class="background">
+<mat-card style="background-color: #1A5276">
+    <mat-card-header color="primary">
+      <mat-card-title style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-size: x-large; margin-top: 5px;;">D È C H E B O A R D</mat-card-title> <button mat-raised-button color="primary" (click)="NavigateToConnections()" style="left: 1475px; top: 40; background-color: #1C2833">Connection page</button>
+    </mat-card-header>
+  </mat-card>
+  <button mat-raised-button (click)="addCard_Spotify()">spotify profile</button>
+  <button mat-raised-button (click)="addCard_Spotify_playlist()">spotify playlist</button>
+  <button mat-raised-button (click)="addCard_Github()">github profile</button>
+  <button mat-raised-button (click)="addCard_Github_fetched()">github fetched</button>
+  <button mat-raised-button (click)="addCard_Discord()">discord profile</button>
+  <button mat-raised-button (click)="clearCards()">Clear All Cards</button>
+  <div>
+    <app-block-card-spotify *ngFor="let block of blocks_spotify" [blockData]="block" style="position: absolute;">
+    </app-block-card-spotify>
+    <app-block-card-spotify-playlist *ngFor="let block of blocks_spotify_playlist" [blockData]="block" style="position: absolute;">
+    </app-block-card-spotify-playlist>
+    <app-block-card-discord *ngFor="let block of blocks_discord" [blockData]="block" style="position: absolute;">
+    </app-block-card-discord>
+    <app-block-card-github *ngFor="let block of blocks_github" [blockData]="block" style="position: absolute;">
+    </app-block-card-github>
+    <app-block-card-github-fetched *ngFor="let block of blocks_github_fetched" [blockData]="block" style="position: absolute;">
+    </app-block-card-github-fetched>
+  </div>
+  <button mat-fab color="primary" aria-label="Example icon button with a delete icon" style="left: 95%; top: 92%; background-color:#1D8348 ; ; border-color:#1A5276; position: absolute;"> </button>
+</div>

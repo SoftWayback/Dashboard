@@ -1,0 +1,59 @@
+{
+    "client": {
+        " host ": "10.101.53.35"
+    },
+    "server": {
+        "current_time": 1531680780,
+        "services": [
+            {
+                " name ": " Discord ",
+                " widgets ": [
+                    {
+                        " name ": " Discord Profile ",
+                        " description ": " Show Your discord profile "
+                    },
+                    {
+                        " name ": " Discord Show Guild ",
+                        " description ": " Show Your discord Guilds "
+                    }
+                ]
+            },
+            {
+                "name": "Spotify",
+                "widgets": [
+                    {
+                        "name": " Spotify Profile ",
+                        "description": " Show your Spotify Profile "
+                    },
+                    {
+                        " name ": " Spotify Seek Artist ",
+                        " description ": " Show basics information about an artist ",
+                        " params ": [{
+                            " name ": "Artist Name" ,
+                            " type ": "string"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": " Github",
+                "widgets": [
+                    {
+                        "name": " Github Profile ",
+                        "description": " Show your Github Profile "
+                    },
+                    {
+                        " name ": " Github seek star repo ",
+                        " description ": " Show your starred repos ",
+                        " params ": [{
+                            " name ": " your name" ,
+                            " type ": "string"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+}

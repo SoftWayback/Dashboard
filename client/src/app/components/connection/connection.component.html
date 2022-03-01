@@ -1,0 +1,16 @@
+<div class="background">
+    <mat-card style="background-color: #1A5276">
+        <mat-card-header color="primary">
+          <mat-card-title style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-size: x-large; margin-top: 5px;;">D È C H E B O A R D</mat-card-title> <button mat-raised-button color="primary" (click)="NavigateToMain()" style="left: 1475px; top: 40; background-color: #1C2833">Return to dashboard</button>
+        </mat-card-header>
+    </mat-card>
+    <mat-card  class="card-twitter"> <img class="fit-picture-twitter" src="../../../assets/twitter-logo.png"> <p class="text">Twitter</p> <button mat-raised-button color="primary" class="link-button" (click)="goToLink('http://localhost:8080/data/auth/github')">Connect</button>
+    </mat-card>
+    <mat-card  class="card-spotify"> <img class="fit-picture-twitter" src="../../../assets/spotify_logo.png"><p class="text">Spotify</p> <button mat-raised-button color="primary" class="link-button" (click)="goToLink('http://localhost:8080/data/auth/spotify')">Connect</button>
+    </mat-card>
+    <mat-card class="card-discord"> <img class="fit-picture-discord" src="../../../assets/discord.jpg"> <p class="text">Discord</p><button mat-raised-button color="primary"  class="link-button" (click)="goToLink('http://localhost:8080/data/auth/discord')">Connect</button>
+    </mat-card>
+    <mat-card class="card-discord"> <img class="fit-picture-discord" src="../../../assets/discord.jpg">
+      <p class="text">TWITCH</p><button mat-raised-button color="primary" class="link-button" (click)="goToLink('http://localhost:8080/auth/twitchtv')">Connect</button>
+    </mat-card>
+</div>

@@ -1,0 +1,38 @@
+<div>
+<section>
+    <mat-grid-list cols="3">
+      <mat-grid-tile colspan="3">
+        <mat-card>
+          <mat-card-header color="primary">
+            <mat-card-title>REGISTRATION</mat-card-title>
+          </mat-card-header>
+          <form [formGroup]="signupForm" (ngSubmit)="createUser()">
+            <mat-form-field style="width:400px !important">
+              <mat-label>Name</mat-label>
+              <input formControlName="name" matInput>
+            </mat-form-field>
+            <br>
+            <mat-form-field style="width:400px !important">
+              <mat-label>Email</mat-label>
+              <input formControlName="email" matInput>
+            </mat-form-field>
+            <br>
+            <mat-form-field style="width:400px !important">
+              <mat-label>Phone</mat-label>
+              <input formControlName="phone_number" matInput>
+            </mat-form-field>
+            <br>
+            <mat-form-field style="width:400px !important">
+              <mat-label>Password</mat-label>
+              <input type="password" formControlName="password" matInput>
+            </mat-form-field>
+            <br>
+            <button type="submit" mat-raised-button color="primary">REGISTER</button>
+            <button mat-raised-button color="primary" (click)="NavigateToLogin()" style="left: 195px; background-color: deeppink;">LOGIN PAGE</button>
+          </form>
+        </mat-card>
+      </mat-grid-tile>
+    </mat-grid-list>
+  </section>
+</div>
+  
